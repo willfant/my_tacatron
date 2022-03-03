@@ -1,7 +1,7 @@
 
 voc_model_id: 'ljspeech_voc'
 tts_model_id: 'ljspeech_tts'
-data_path: 'data/'                                        # output data path
+data_path: '/content/drive/MyDrive/AI/my_tacatron/data/'                                        # output data path
 
 tts_model: 'forward_tacotron'                             # choices: [forward_tacotron, fast_pitch]
 
@@ -214,4 +214,5 @@ vocoder:
     gen_batched: True              # very fast (realtime+) single utterance batched generation
     target: 11_000                 # target number of samples to be generated in each batch entry
     overlap: 550                   # number of samples for crossfading between batches
+
 
