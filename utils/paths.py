@@ -5,10 +5,10 @@ from pathlib import Path
 class Paths:
     """Manages and configures the paths used by WaveRNN, Tacotron, and the data."""
     def __init__(self, data_path, voc_id, tts_id):
-        self.base = Path(__file__).parent.parent.expanduser().resolve()
+        self.base = '/content/drive/MyDrive/AI/my_tacatron/'
 
         # Data Paths
-        self.data = Path(data_path).expanduser().resolve()
+        self.data = Path('/content/drive/MyDrive/AI/my_tacatron/data').expanduser().resolve()
         self.quant = self.data/'quant'
         self.mel = self.data/'mel'
         self.gta = self.data/'gta'
